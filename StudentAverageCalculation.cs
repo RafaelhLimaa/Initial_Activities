@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Initial_Activities
+﻿namespace Initial_Activities
 {
     public class StudentAverageCalculation
     {
@@ -28,7 +22,6 @@ namespace Initial_Activities
                     {
                         Console.WriteLine("\nERROR: Value must be an integer between 0 and 100. Please try again.");
                     }
-
                 } while (true);
             }
             var average = grade.Average();
@@ -36,13 +29,15 @@ namespace Initial_Activities
             if (average >= 70)
             {
                 Console.WriteLine($"\nCongratulations! You are approved. Your average is {average}.");
-            }else if (average <70 & average >= 50)
+            }
+            else if (average < 70 & average >= 50)
             {
                 Console.WriteLine($"\nBe careful! You are recovering. Your average is {average}.");
-            }else
+            }
+            else
             {
                 Console.WriteLine($"\nI'm sorry! You Failed. Your average is {average}.");
-            }        
+            }
         }
     }
 }

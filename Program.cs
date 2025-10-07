@@ -4,8 +4,12 @@
     {
         static void Main(string[] args)
         {
-            StudentAverageCalculation calculation = new StudentAverageCalculation();
-            calculation.Calculation();
+            //StudentAverageCalculation calculation = new();
+            //calculation.Calculation();
+
+            ShowMenu showMenu = new();
+            showMenu.ShowMenuItems();
+            showMenu.StartOrder();
         }
     }
 }
